@@ -1,0 +1,152 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #181818;
+    background-color: #5259FF;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Container */
+#container {
+    width: 500px;
+    height: auto;
+    padding: 30px 30px 40px;
+    border-radius: 40px;
+    box-shadow: -4px 8px 4px #0000003f;
+    background-color: #F0F0F0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#pequeno, #medio, #grande {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #5259FF;
+}
+#pequeno {
+    width: 12px;
+    height: 12px;
+}
+#medio {
+    width: 14px;
+    height: 14px;
+}
+#grande {
+    width: 16px;
+    height: 16px;
+}
+
+/* main */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+form h2 {
+    flex-grow: 2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+form input {
+    flex-grow: 1;
+    width: 324px;
+    height: 46px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #181818;
+    transition: border-color 2ms ease-in;
+}
+form input {
+    font-family: 'Assistant', sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+}
+form input:focus {
+    border-width: 2px;
+    border-color: #5259FF;
+}
+form button {
+    width: 100px;
+    height: 46px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #181818;
+    transition: background-color 100ms ease-in;
+}
+form button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+form button:hover {
+    color: #F0F0F0;
+    background-color: #5259FF;
+    border: none;
+}
+form::after {
+    content: "";
+    width: 440px;
+    height: 1px;
+    position: relative;
+    top: 40px;
+    background-color: #181818;
+}
+
+/* Lista de Tarefas */
+ul {
+    list-style: none;
+    font-family: 'Assistant', sans-serif;
+}
+.tarefa {
+    width: 440px;
+    height: 46px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    color: #181818;
+    border: 1px solid #181818;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.concluida {
+    color: #F0F0F0;
+    border: none;
+    text-decoration: line-through;
+    background-color: #5259FF;
+}
+.concluir, .deletar {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #181818;
+    opacity: 80%;
+}
